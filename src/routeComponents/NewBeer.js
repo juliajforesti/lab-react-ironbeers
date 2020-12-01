@@ -22,7 +22,7 @@ const NewBeer = (props) => {
   async function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true)
-    const response = await axios.post(
+    await axios.post(
       'https://ih-beers-api2.herokuapp.com/beers/new',
       state
     );
@@ -30,7 +30,7 @@ const NewBeer = (props) => {
   }
 
   return (
-    <form className="mx-5 mt-2" onSubmit={handleSubmit}>
+    <form className="mx-5 mt-5" onSubmit={handleSubmit}>
       <div className="form-group">
         <label htmlFor="name">Name</label>
         <input

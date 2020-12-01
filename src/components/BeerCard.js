@@ -3,7 +3,7 @@ import React from 'react';
 const BeerCard = (props) => {
   const { beer } = props;
   return (
-    <div className="p-3 ">
+    <div className="p-3 mt-3">
       <div className="d-flex justify-content-center">
         <img className="card-img" src={beer.image_url} alt="" />
       </div>

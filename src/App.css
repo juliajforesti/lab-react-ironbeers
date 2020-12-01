@@ -2,6 +2,16 @@ i {
   color: white;
 }
 
+.container{
+  margin-top: 2.5rem;
+}
+
+.back-icon{
+  position: fixed;
+  left: 0.8rem;
+
+}
+
 .card {
   color: rgb(34, 34, 34);
 }
@@ -31,6 +41,6 @@ i {
     object-fit: contain;
   }
   .container{
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }
