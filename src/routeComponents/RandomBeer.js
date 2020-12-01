@@ -14,13 +14,11 @@ const RandomBeer = () => {
           'https://ih-beers-api2.herokuapp.com/beers/random'
         );
         setBeer(response.data);
+        setisLoading(false);
+
       } catch (error) {}
     })();
   }, []);
-
-  useEffect(() => {
-    setisLoading(false);
-  }, [beer]);
 
   return (
     <div>
