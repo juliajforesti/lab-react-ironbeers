@@ -11,7 +11,7 @@ const Searchbar = (props) => {
   }, [input]);
 
   return (  
-    <div className='m-1'>
+    <div className='m-1 mt-5'>
       <input className='w-100' onChange={handleChange} value={input} placeholder='Search your beer' type="text"/>
     </div>
   );
