@@ -5,7 +5,7 @@ const Navbar = (props) => {
   const history = useHistory()
   return (
     <nav className="navbar fixed-top navbar-dark bg-primary d-flex justify-content-center">
-      <div onClick={() => history.goBack()} className='back-icon'>
+      <div onClick={() => history.goBack()} className='back-icon' style={{cursor: 'pointer'}}>
           <i className="fa fa-chevron-left " aria-hidden="true" style={{fontSize: '1.8rem'}}></i>
       </div>
         <Link to="/">
