@@ -6,8 +6,6 @@ import Searchbar from '../components/Searchbar';
 const Beers = () => {
   const [beers, setBeers] = useState([]);
   const [filteredBeers, setFilteredBeers] = useState([]);
-
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
